@@ -1,0 +1,37 @@
+# Ignore build output
+target/
+*.jar
+*.class
+*.war
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Maven
+.m2/
+.mvn/
+
+# Node
+node_modules/
+.npm
+dist/
+
+# Environment
+.env
+.env.local
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Old backend (archived)
+old_backend/

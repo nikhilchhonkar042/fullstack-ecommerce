@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: notification-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce_notification
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8084
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus

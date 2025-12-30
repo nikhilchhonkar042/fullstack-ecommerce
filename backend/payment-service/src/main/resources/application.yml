@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: payment-service
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce_payment
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8082
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
